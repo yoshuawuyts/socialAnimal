@@ -1,0 +1,4 @@
+socialAnimal
+============
+
+Group dynamics paper
