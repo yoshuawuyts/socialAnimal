@@ -1,0 +1,1 @@
+pdflatex lib/proposal.tex -output-directory=./build
