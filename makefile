@@ -3,19 +3,23 @@
 all: build
 
 build: lib/proposal.tex
-
 	# setup
+	rm -rf build/
+	cp ./lib/index.tex ./index.tex
 	cp ./packages/apa6.cls ./apa6.cls
 
 	# compile
-	latexmk --pdf --pdflatex="pdflatex" --use-make lib/index.tex --silent
+	latexmk --pdf --pdflatex="pdflatex" --use-make index.tex --silent
+	mkdir -p build
 	mv ./index.pdf ./build/index.pdf
 
 	# clean
-	rm index*
-	mkdir -p build
-	rm ./apa6.cls
+	rm -f index*
+	rm -f ./apa6.cls
+	rm -f *.aux
 
 clean:
+	rm -rf build/
+	rm -f index*
 	rm -f apa6.cls
-	latexmk -CA
+	rm -f *.aux

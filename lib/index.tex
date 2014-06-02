@@ -3,11 +3,6 @@
 %
 
 \documentclass[doc, 12pt, a4paper]{apa6}
-
-%
-% Module dependencies.
-%
-
 %\usepackage{apacite}
 
 %
@@ -19,27 +14,23 @@
 \author{Yoshua Wuyts}
 \leftheader{Wuyts}
 \affiliation{Vrije Universiteit Amsterdam}
-\abstract{Simon is een grote sterke jongen.}
+\abstract{\input{lib/abstract}}
 
 %
-% Begin document.
+% Header.
 %
 
 \begin{document}
-
-%
-% Front page.
-%
-
 \maketitle
 \rmfamily
-\clearpage
 
 %
 % Import chapters.
 %
 
-%\input{./proposal}
+\input{lib/introduction}
+\input{lib/discussion}
+\input{lib/conclusion}
 
 %
 % Bibliography.
