@@ -2,8 +2,14 @@
 % Document definition.
 %
 
-\documentclass[doc, 12pt, a4paper]{apa6}
-%\usepackage{apacite}
+\documentclass[doc, 12pt, a4paper, english]{apa6}
+
+\usepackage{csquotes}
+\usepackage{babel}
+%\usepackage[style=apa, sortcites=true, sorting=nyt, backend=biber]{biblatex}
+
+%\DeclareLanguageMapping{english}{english-apa}
+%\addbibresource{bibliography/index.bib}
 
 %
 % Variables.
@@ -14,6 +20,7 @@
 \author{Yoshua Wuyts}
 \leftheader{Wuyts}
 \affiliation{Vrije Universiteit Amsterdam}
+
 \abstract{\input{lib/abstract}}
 
 %
@@ -22,7 +29,6 @@
 
 \begin{document}
 \maketitle
-\rmfamily
 
 %
 % Import chapters.
@@ -31,11 +37,11 @@
 \input{lib/introduction}
 \input{lib/discussion}
 \input{lib/conclusion}
+%\parencite{greenwade93}
 
 %
 % Bibliography.
 %
 
-\bibliographystyle{apacite}
-%\bibliography{bibliography/index.bib}
+%\printbibliography
 \end{document}
