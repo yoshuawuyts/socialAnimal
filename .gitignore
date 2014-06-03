@@ -99,3 +99,4 @@ sympy-plots-for-*.tex/
 
 *.cls
 *.aux
+/build
