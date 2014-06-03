@@ -23,6 +23,7 @@ build: lib/proposal.tex
 	rm -f ./apacite.bst
 	rm -f ./biblatex.sty
 	rm -f ./biblatex2.sty
+	rm -f *.lbx
 	rm -f *.aux
 
 clean:
@@ -32,5 +33,6 @@ clean:
 	rm -f ./apacite.bst
 	rm -f ./biblatex.sty
 	rm -f ./biblatex2.sty
+	rm -f *.lbx
 	rm -f *.aux
 	rm -rf build/
